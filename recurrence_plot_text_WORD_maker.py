@@ -137,7 +137,7 @@ def recurrence_plot_with_threshold(trajectories, output_dir="./", results=None):
                 doc.add_page_break()
         
         # Save the document
-        doc_path = os.path.join(output_dir, f"launch_pentek_{TEMPERATURE}_{RADIUS_INITIAL_CONDITIONS}.docx")
+        doc_path = os.path.join(output_dir, f"summary_report.docx")
         doc.save(doc_path)
         print(f"Created Word document using python-docx: {doc_path}")
         
